@@ -1,0 +1,475 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color:whitesmoke;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.container{
+  position: relative;
+  height: 100vh;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background-color:white;
+
+
+  display: flex;
+  gap:5px;
+  align-items: center;
+
+}
+
+.header button
+{
+  margin-left:50px;
+}
+
+.buttons-container{
+  margin-left: 10%;
+}
+
+header input{
+ display: flex;
+  border-radius: 30%;
+  justify-content: center;
+  align-items: center;
+}
+.search-icon {
+  position: absolute;
+  width:50px;
+  height: 20px;
+  color:blue;
+  display: flex;
+  display: inline;
+}
+
+.landingpage-container{
+  background-color: rgb(62, 62, 228);
+  color:black;
+}
+.getstarted{
+  padding-right: 40%;
+}
+.getstarted-buttons{
+  height: 50px;
+  margin-top: 20%;
+  display: flex;
+  margin: 20%;
+  gap:20px;
+  padding-bottom: 20%;
+}
+.footer{
+ background-color: white;
+position: absolute;
+bottom:0;
+display: flex;
+}
+.fbuttons{
+  color:blue;
+  bottom:0;
+ text-align: center;
+}
+.boxes{
+  color:blue;
+  display: flex;
+  border-style: dotted;
+} */
+/* ========== GENERAL ========== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ========== HEADER ========== */
+.udemy-header {
+  height: 70px;
+  background: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #a435f0;
+}
+
+/* Search bar */
+.search-box {
+  flex: 1;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 40px 10px 15px;
+  border-radius: 30px;
+  border: 1px solid #aaa;
+  font-size: 16px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 9px;
+  font-size: 20px;
+  color: #555;
+}
+
+/* Navigation buttons */
+.nav-buttons button {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: black;
+}
+
+.nav-buttons button:hover {
+  color: #a435f0;
+}
+
+/* Right side */
+.right-buttons button {
+  margin-left: 10px;
+  background: none;
+  border: 1px solid black;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login:hover {
+  background: #eee;
+}
+
+.signup {
+  background: black;
+  color: white;
+}
+
+.signup:hover {
+  opacity: 0.8;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 50px;
+  background: #f7f9fa;
+}
+
+.hero-text {
+  max-width: 45%;
+}
+
+.hero-text h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.start-btn {
+  background: #a435f0;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.start-btn:hover {
+  background: #922fd4;
+}
+
+.ai-btn {
+  background: white;
+  border: 1px solid #000;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.ai-btn:hover {
+  background: #eee;
+}
+
+/* Hero Image */
+.hero-image img {
+  width: 450px;
+  border-radius: 10px;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  height: 70px;
+  background: #1c1d1f;
+  color: white;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+/* ================= HERO SECTION ================= */
+.landingpage-container {
+  display: flex;
+  align-items: center;
+  padding: 60px 80px;
+  background: #f7f9fa;
+  gap: 60px;
+}
+
+.image-container img {
+  width: 420px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.getstarted {
+  max-width: 45%;
+}
+
+.getstarted h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.getstarted p {
+  color: #444;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.getstarted-buttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.primary-btn {
+  padding: 12px 25px;
+  border: none;
+  background: #a435f0;
+  color: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: #922fd4;
+}
+
+.secondary-btn {
+  padding: 12px 25px;
+  border: 1px solid black;
+  background: white;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.secondary-btn:hover {
+  background: #eee;
+}
+
+/* ================= COURSE SECTION ================= */
+.maincontentcourses {
+  padding: 60px 80px;
+  text-align: center;
+}
+
+.maincontentcourses h1 {
+  font-size: 36px;
+}
+
+.maincontentcourses p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Course cards */
+.boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.box {
+  width: 260px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+.box img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.box h2 {
+  font-size: 17px;
+  margin: 10px 0;
+}
+
+.box strong {
+  font-size: 18px;
+  color: black;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .landingpage-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .getstarted {
+    max-width: 100%;
+  }
+
+  .image-container img {
+    width: 80%;
+  }
+}
+
+
+/**/
+
+
+
+
+
+/* Category Tabs */
+.tabs {
+  display: flex;
+  gap: 20px;
+  margin: 25px 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  padding-bottom: 8px;
+  color: #555;
+}
+
+.tab.active {
+  font-weight: bold;
+  border-bottom: 3px solid black;
+  color: black;
+}
+
+/* Course cards grid */
+.course-list {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  transition: opacity 0.3s ease;
+}
+
+.course-card {
+  width: 400px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: white;
+  transition: 0.3s;
+}
+
+.course-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Fade Transition */
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
